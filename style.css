@@ -1,0 +1,22 @@
+:root { --grape:#6C4AD8; --ink:#2B2350; --soft:#5B5478; --cream:#FFF8EC; --sun:#FFC233; --card:#FFFFFF; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#F3EEFF; --soft:#C9C2E6; --cream:#1C1733; --card:#28214A; --grape:#9C84F0; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 "Baloo 2", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+header { background:#6C4AD8; color:#fff; padding:20px 16px; }
+header .wrap { display:flex; align-items:center; gap:14px; }
+header img { width:56px; height:56px; border-radius:14px; }
+header a { color:#fff; text-decoration:none; font-weight:800; font-size:22px; }
+.wrap { max-width:760px; margin:0 auto; }
+main { padding:24px 16px 48px; }
+main .wrap { background:var(--card); border-radius:20px; padding:24px; }
+h1 { font-size:30px; line-height:1.2; margin:0 0 8px; }
+h2 { font-size:21px; margin:28px 0 6px; }
+p, li { color:var(--ink); }
+.soft { color:var(--soft); }
+a { color:var(--grape); }
+nav { margin-top:20px; display:flex; flex-wrap:wrap; gap:12px; }
+nav a { background:var(--grape); color:#fff; padding:10px 16px; border-radius:999px; text-decoration:none; font-weight:700; }
+footer { text-align:center; padding:0 16px 32px; color:var(--soft); font-size:14px; }
+footer a { color:var(--soft); }
